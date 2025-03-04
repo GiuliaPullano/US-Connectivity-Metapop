@@ -116,7 +116,7 @@ int main(int argc, char* argv[]){
      
      string  deg;
      int idx=0,in=0,out=0,month=0;
-     deg="./../network_in-out_degree_"+scale+".txt";
+     deg="./"+scale+"/network_in-out_degree.txt";
      ifstream read_degree(deg);
      if (read_degree.good()){
          while (read_degree >> idx>>month>> in>> out) {
@@ -204,7 +204,7 @@ int main(int argc, char* argv[]){
              //================== READ CONNETTIVITY NETWORK BY MONTH AND SCALE ============================//
             
                  string  matrix;
-                 matrix="./../net_"+scale+"/net_monthly_matrix_sd_county_month"+ to_string(month_idx) +"_"+scale+".txt";
+                 matrix="./../"+scale+"/net_monthly_matrix_sd_county_month"+ to_string(month_idx) +".txt";
                  
                  cout<<"test_net: "<<month_idx<<" "<<endl;
                  //matrix="./monthly_matrix_sd_state.txt";
