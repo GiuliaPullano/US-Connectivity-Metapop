@@ -116,7 +116,7 @@ int main(int argc, char* argv[]){
      
      string  deg;
      int idx=0,in=0,out=0,month=0;
-     deg="./../net_"+scale+"/degree_"+scale+".txt";
+     deg="./../network_in-out_degree_"+scale+".txt";
      ifstream read_degree(deg);
      if (read_degree.good()){
          while (read_degree >> idx>>month>> in>> out) {
